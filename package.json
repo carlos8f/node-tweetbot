@@ -1,7 +1,7 @@
 {
   "name": "node-tweetbot",
   "version": "0.0.0",
-  "description": "Auto-tweet based on fuzzy logic and random voodoo",
+  "description": "Your own markov-chain-based twitter buddy.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
