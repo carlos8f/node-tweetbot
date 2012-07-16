@@ -19,7 +19,7 @@ $ npm install -g tweetbot
 Configuration
 =============
 
-- Create a new app on [https://dev.twitter.com/apps/new](dev.twitter.com), and
+- Create a new app on [dev.twitter.com](https://dev.twitter.com/apps/new), and
   then set **Access** to **Read and Write** on the **Settings** page.
 - Request an **Access token** on the **Details** page of your app.
 - Find a writable folder on your computer, change to it, and run:
