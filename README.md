@@ -23,6 +23,7 @@ Configuration
   then set **Access** to **Read and Write** on the **Settings** page.
 - Request an **Access token** on the **Details** page of your app.
 - Find a writable folder on your computer, change to it, and run:
+
     ```bash
     $ tweetbot-init
     ```
