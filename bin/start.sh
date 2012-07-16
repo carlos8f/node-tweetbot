@@ -9,7 +9,7 @@ if (argv.conf) {
   argv.conf = path.join(process.cwd(), argv.conf);
 }
 else {
-  argv.conf = path.join(__dirname, '../tweetbot.json');
+  argv.conf = path.join(process.cwd(), 'tweetbot.json');
 }
 
 fs.existsSync || (fs.existsSync = path.existsSync);
