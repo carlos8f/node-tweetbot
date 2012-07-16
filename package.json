@@ -1,6 +1,6 @@
 {
   "name": "tweetbot",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Your own markov-chain-based twitter buddy.",
   "main": "index.js",
   "scripts": {
