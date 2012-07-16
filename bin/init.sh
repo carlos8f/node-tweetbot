@@ -26,6 +26,8 @@ prompt.get([{
   description: 'Access token secret',
   required: true
 }], function(err, result) {
+  result.removeMentions = true;
+  result.tweetInterval = 1000 * 60 * 60;
   fs.writeFile(confPath, JSON.stringify(result, null, 2), function(err) {
     if (err) throw err;
     fs.chmod(confPath, 0600, function(err) {
