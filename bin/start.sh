@@ -1,11 +1,16 @@
 #!/usr/bin/env node
 var path = require('path')
   , fs = require('fs')
-  , argv = require('optimist')
-    .default('conf', path.join(__dirname, '../tweetbot.json'))
-    .argv
+  , argv = require('optimist').argv
   , tweetbot = require('../')
   ;
+
+if (argv.conf) {
+  argv.conf = path.join(process.cwd(), argv.conf);
+}
+else {
+  argv.conf = path.join(__dirname, '../tweetbot.json');
+}
 
 fs.existsSync || (fs.existsSync = path.existsSync);
 if (!fs.existsSync(argv.conf)) {

@@ -51,9 +51,10 @@ module.exports = function(options) {
     });
 
   function tweetSomething() {
-    var tweet = removeMentions(m.fill(m.pick(), Math.round((Math.random() * 100) + 40))).join(' ');
+    var tweet = removeMentions(m.fill(m.pick(), Math.round((Math.random() * 100) + 20))).join(' ');
     tw.updateStatus(tweet, function(err, data) {
       if (err) {
+        console.error('tried to tweet: ' + tweet);
         console.error(err);
         process.exit(1);
       }
