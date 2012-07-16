@@ -13,7 +13,7 @@ Install
 =======
 
 ```bash
-$ npm install tweetbot
+$ npm install -g tweetbot
 ```
 
 Configuration
