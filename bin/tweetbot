@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+var tweetbot = require('../')
+  , cmd = require('commander')
+  , modeler = require('modeler-twitter')
+
+cmd
+  .version(require('../package.json').version)
+  .parse(process.argv)
+
+modeler.oauthPrompt(function (err, oauth) {
+  if (err) throw err;
+  cmd.oauth = oauth;
+  tweetbot(cmd);
+});

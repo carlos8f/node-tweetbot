@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": {
-    "tweetbot": "./bin/start.sh",
-    "tweetbot-init": "./bin/init.sh"
-  },
+  "bin": "./bin/tweetbot",
   "keywords": [
     "twitter",
     "bot",
@@ -20,9 +17,10 @@
   "author": "Carlos Rodriguez",
   "license": "MIT",
   "dependencies": {
-    "ntwitter": "~0.4.0",
     "markov": "0.0.6",
-    "optimist": "~0.3.4",
-    "prompt": "~0.2.2"
+    "modeler-twitter": "~0.1.0",
+    "natural": "~0.1.21",
+    "ntwitter": "~0.5.0",
+    "commander": "~1.2.0"
   }
 }
